@@ -1,0 +1,11 @@
+from xyz.supercoders.Shapes.square import Square
+from xyz.supercoders.Shapes.rectangle import Rectangle
+
+class ShapeStatistics:
+	
+	def print_statistics(shape):
+		if isinstance(shape,Square) or isinstance(shape,Rectangle):
+			print(shape.area())
+			print(shape.perimeter())
+		else:
+			print("Invalid")
